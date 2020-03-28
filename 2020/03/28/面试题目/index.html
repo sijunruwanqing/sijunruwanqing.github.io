@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="#[100以内的质数相加] 概念引出数学上的概念  质数也称素数，即只能被1和它本身整除的正整数。 如2，3，5，7等，2是唯一的偶数质数。大于2的偶数都是合数。 合数  除1和它本身之外，至少还有1个数能够整除它。如4，9，12等。 &#96;判定：如果a能被2-a-1之间任一整数整除,其二个因子必定有一个小于或等于√m，另一个大于或等于√m。  #代码实现      #include &lt;stdi">
+<meta name="description" content="#100以内的质数相加 概念引出数学上的概念  质数也称素数，即只能被1和它本身整除的正整数。 如2，3，5，7等，2是唯一的偶数质数。大于2的偶数都是合数。 合数  除1和它本身之外，至少还有1个数能够整除它。如4，9，12等。 &#96;判定：如果a能被2-a-1之间任一整数整除,其二个因子必定有一个小于或等于√m，另一个大于或等于√m。  #代码实现      #include &lt;stdio.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2020/03/28/test/index.html">
+<meta property="og:title" content="面试题目">
+<meta property="og:url" content="http://yoursite.com/2020/03/28/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/index.html">
 <meta property="og:site_name" content="sotincly.home">
-<meta property="og:description" content="#[100以内的质数相加] 概念引出数学上的概念  质数也称素数，即只能被1和它本身整除的正整数。 如2，3，5，7等，2是唯一的偶数质数。大于2的偶数都是合数。 合数  除1和它本身之外，至少还有1个数能够整除它。如4，9，12等。 &#96;判定：如果a能被2-a-1之间任一整数整除,其二个因子必定有一个小于或等于√m，另一个大于或等于√m。  #代码实现      #include &lt;stdi">
+<meta property="og:description" content="#100以内的质数相加 概念引出数学上的概念  质数也称素数，即只能被1和它本身整除的正整数。 如2，3，5，7等，2是唯一的偶数质数。大于2的偶数都是合数。 合数  除1和它本身之外，至少还有1个数能够整除它。如4，9，12等。 &#96;判定：如果a能被2-a-1之间任一整数整除,其二个因子必定有一个小于或等于√m，另一个大于或等于√m。  #代码实现      #include &lt;stdio.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-28T04:50:09.000Z">
-<meta property="article:modified_time" content="2020-03-28T04:13:37.300Z">
+<meta property="article:modified_time" content="2020-03-28T04:20:32.039Z">
 <meta property="article:author" content="hustcoder">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/28/test/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/28/面试题目/"/>
 
 
 
 
 
-  <title>test | sotincly.home</title>
+  <title>面试题目 | sotincly.home</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hustcoder">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test</h1>
+          <h1 class="post-title" itemprop="name headline">面试题目</h1>
         
 
         <div class="post-meta">
@@ -299,14 +299,14 @@
       
 
       
-        <p>#[100以内的质数相加]</p>
+        <p>#100以内的质数相加</p>
 <h1 id="概念引出"><a href="#概念引出" class="headerlink" title="概念引出"></a>概念引出</h1><p>数学上的概念</p>
 <ul>
 <li><strong>质数</strong>也称素数，即只能被1和它本身整除的正整数。<br> 如2，3，5，7等，2是唯一的偶数质数。大于2的偶数都是合数。</li>
 <li><strong>合数</strong>  除1和它本身之外，至少还有1个数能够整除它。如4，9，12等。</li>
 <li>`<strong>判定</strong>：如果a能被2-a-1之间任一整数整除,其二个因子必定有一个小于或等于√m，另一个大于或等于√m。</li>
 </ul>
-<p>#代码实现<br>      #include &lt;stdio.h&gt;<br>      #include &lt;math.h&gt;<br>      int isPrime(int n)//判断素数函数。<br>         {<br>         int i;<br>         for(i = 2; i &lt;= (int)sqrt(n); i++)//从2到算数平方根遍历。<br>              if(n%i == 0)<br>               return 0;//存在约数，非素数，返回0.<br>              return 1;//是素数，返回1.<br>         }<br>          int main().<br>          {<br>            int i,s;<br>            for(i = 2; i &lt;= 10; i ++)<br>                  if(isPrime(i))<br>                      s=i+s;<br>                      printf(“%d “, s);//输出素数。<br>              return 0;<br>            }</p>
+<p>#代码实现<br>      #include &lt;stdio.h&gt;<br>      #include &lt;math.h&gt;<br>      int isPrime(int n)//判断素数函数。<br>      &amp;nbsp{<br>        &amp;nbsp&amp;nbsp&amp;nbs int i;<br>         &amp;nbsp&amp;nbsp&amp;nbspfor(i = 2; i &lt;= (int)sqrt(n); i++)//从2到算数平方根遍历。<br>             &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp if(n%i == 0)<br>              &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp return 0;//存在约数，非素数，返回0.<br>            &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp  return 1;//是素数，返回1.<br>         }<br>          int main().<br>         &amp;nbsp&amp;nbsp {<br>           &amp;nbsp&amp;nbsp&amp;nbsp int i,s;<br>            &amp;nbsp&amp;nbsp&amp;nbspfor(i = 2; i &lt;= 10; i ++)<br>               &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp   if(isPrime(i))<br>                     &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp s=i+s;<br>                      &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbspprintf(“%d “, s);//输出素数。<br>             &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp return 0;<br>          &amp;nbsp&amp;nbsp  }</p>
 
       
     </div>
