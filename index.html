@@ -231,7 +231,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/25/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hustcoder">
@@ -250,7 +250,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/03/25/test/" itemprop="url">test</a></h1>
+                <a class="post-title-link" href="/2020/03/28/test/" itemprop="url">test</a></h1>
         
 
         <div class="post-meta">
@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-25T12:50:09+08:00">
-                2020-03-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-28T12:50:09+08:00">
+                2020-03-28
               </time>
             
 
@@ -302,7 +302,15 @@
       
         
           
-            
+            <p>#[100以内的质数相加]</p>
+<h1 id="概念引出"><a href="#概念引出" class="headerlink" title="概念引出"></a>概念引出</h1><p>数学上的概念</p>
+<ul>
+<li><strong>质数</strong>也称素数，即只能被1和它本身整除的正整数。<br> 如2，3，5，7等，2是唯一的偶数质数。大于2的偶数都是合数。</li>
+<li><strong>合数</strong>  除1和它本身之外，至少还有1个数能够整除它。如4，9，12等。</li>
+<li>`<strong>判定</strong>：如果a能被2-a-1之间任一整数整除,其二个因子必定有一个小于或等于√m，另一个大于或等于√m。</li>
+</ul>
+<p>#代码实现<br>      #include &lt;stdio.h&gt;<br>      #include &lt;math.h&gt;<br>      int isPrime(int n)//判断素数函数。<br>         {<br>         int i;<br>         for(i = 2; i &lt;= (int)sqrt(n); i++)//从2到算数平方根遍历。<br>              if(n%i == 0)<br>               return 0;//存在约数，非素数，返回0.<br>              return 1;//是素数，返回1.<br>         }<br>          int main().<br>          {<br>            int i,s;<br>            for(i = 2; i &lt;= 10; i ++)<br>                  if(isPrime(i))<br>                      s=i+s;<br>                      printf(“%d “, s);//输出素数。<br>              return 0;<br>            }</p>
+
           
         
       
